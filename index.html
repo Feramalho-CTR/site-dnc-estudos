@@ -40,7 +40,10 @@
             e comece seu primeiro projeto
             </h1>
             <br><br>
+
             <p>
+
+            <p id="texto-video">
             Conheça o processo de desenvolvimento e entenda como utilizar <br>
             os principais métodos e ferramentas da área para resolver <br>
              problemas complexos.
@@ -65,15 +68,15 @@
         </div>
     </div>
     <div id="formulario">
-            <h1 id="titulo-formulario">Comece agora mesmo e dê o próximo passo da sua carreira</h1>
-           <form action="https://api.sheetmonkey.io/form/jrECixVftSTDsFHnm72yT" method="post">
-                <input type="text" placeholder="Nome" name="Name" required>  <br>
-                <input type="email" placeholder="E-mail" name="Email" required> <br>
-                <input type="tel" placeholder="Telefone" name="Phone" pattern="\(\d{2}\) \d{4,5}-\d{4}" required><br>
-                <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
-                <button type="submit">Acesse a ementa grátis</button>
-            </form>
-            
+        <h1 id="titulo-formulario">Comece agora mesmo e dê o próximo passo da sua carreira</h1>
+
+        <form action="https://api.sheetmonkey.io/form/jrECixVftSTDsFHnm72yT" method="post" target="_blank">
+            <input type="text" placeholder="Nome" name="Name" required>  <br>
+            <input type="email" placeholder="E-mail" name="Email" required> <br>
+            <input type="tel" placeholder="Telefone" name="Phone" id="telefone" oninput="formatarTelefone(this)" required><br>
+            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+            <button type="submit" formtarget="_blank">Acesse a ementa grátis</button>
+        </form>       
     </div>
 
     <script src="index.js"></script>
