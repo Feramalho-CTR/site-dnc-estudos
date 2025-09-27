@@ -70,14 +70,17 @@
     <div id="formulario">
         <h1 id="titulo-formulario">Comece agora mesmo e dê o próximo passo da sua carreira</h1>
 
-        <form action="https://feramalho.app.n8n.cloud/webhook-test/estrutura-ia" method="post" target="_blank">
-            <input type="text" placeholder="Nome" name="Name" required>  <br>
+        <form id="leadForm" action="https://feramalho.app.n8n.cloud/webhook-test/estrutura-ia" method="post">
+            <input type="text" placeholder="Nome" name="Name" required> <br>
             <input type="email" placeholder="E-mail" name="Email" required> <br>
             <input type="tel" placeholder="Telefone" name="Phone" id="telefone" oninput="formatarTelefone(this)" required><br>
-            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
-            <button type="submit" formtarget="https://ramalhostore.netlify.app/">Acesse a ementa grátis</button>
-        </form>       
+            
+            <input type="hidden" id="created_at" name="Created" value="" />
+            
+            <button type="submit">Acesse a ementa grátis</button>
+        </form>
     </div>
+</div>
 
     <script src="index.js"></script>
 </body>
